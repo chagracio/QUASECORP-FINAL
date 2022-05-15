@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="header-logo">
+          <a href="#" class="logo">
+            <img src="{% static 'images/a.jpeg' %}" alt="">
+          </a>
+        </div>
+      </div>
+
+      <nav>
+        <!-- container -->
+        <div class="container">
+          <!-- responsive-nav -->
+          <div id="responsive-nav">
+            <!-- NAV -->
+            <ul class="main-nav1 nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Reviews and Feedback</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li>
+                  <a href="{% url 'login' %}">
+                    <i class="fa fa-user-o"></i>
+                    <span>Log In</span>
+                  </a>
+              </li>
+            </ul>
+            <!-- /NAV -->
+          </div>
+          <!-- /responsive-nav -->
+        </div>
+        <!-- /container -->
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 style="font-size: 100px; color: black;">
+        C & 3G <br>Rice & Corn <br>Wholesale & Retail
+      </h1>
+      <h3 style="color: black;">
+        Punong Chimang Tugbungan <br> Zamboanga City
+      </h5>
+      <br>
+    </div>
+  </div>
+</div>
+<center>
+  <footer class="page-footer font-small fixed-bottom" style="height: 5vh;
+background-color: #161a0c;
+display: grid;
+grid-template-columns: 1fr 1fr;
+color: #f0f0f0;">
+  <div class="footer-copyright text-center py-3" style="text-align: center;" >
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+  </div>
+</footer>
+</center>
+
+{% endblock content %}
